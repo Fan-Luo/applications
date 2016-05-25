@@ -5,7 +5,7 @@ set -- $mylist
 
 for APP1; do
 	    echo  "./gpgpu_ptx_sim__mergedapps -sing" $APP1 \> output\_$APP1.txt>  mainscript\_$APP1
-		echo  "./gpgpu_ptx_sim__mergedapps -apps" $APP1 \> output\_$APP1\_$APP1.txt>  mainscript\_$APP1\_$APP1
+		echo  "./gpgpu_ptx_sim__mergedapps -apps" $APP1 $APP1 \> output\_$APP1\_$APP1.txt>  mainscript\_$APP1\_$APP1
 		echo  "./gpgpu_ptx_sim__mergedapps -sing0" $APP1 \> output\_$APP1\_NoStream.txt>  mainscript\_$APP1\_NoStream
         shift
         for APP2; do
@@ -19,7 +19,7 @@ set -- $mylist2
 
 for APP1; do
     echo  "./gpgpu_ptx_sim__mergedapps -sing" $APP1 \> output\_$APP1.txt>  mainscript\_$APP1
-    echo  "./gpgpu_ptx_sim__mergedapps -apps" $APP1 \> output\_$APP1\_$APP1.txt>  mainscript\_$APP1\_$APP1
+    echo  "./gpgpu_ptx_sim__mergedapps -apps" $APP1 $APP1 \> output\_$APP1\_$APP1.txt>  mainscript\_$APP1\_$APP1
     echo  "./gpgpu_ptx_sim__mergedapps -sing0" $APP1 \> output\_$APP1\_NoStream.txt>  mainscript\_$APP1\_NoStream
     shift
     for APP2; do
@@ -33,7 +33,7 @@ set -- $mylist3
 
 for APP1; do
     echo  "./gpgpu_ptx_sim__mergedapps -sing" $APP1 \> output\_$APP1.txt>  mainscript\_$APP1
-    echo  "./gpgpu_ptx_sim__mergedapps -apps" $APP1 \> output\_$APP1\_$APP1.txt>  mainscript\_$APP1\_$APP1
+    echo  "./gpgpu_ptx_sim__mergedapps -apps" $APP1 $APP1 \> output\_$APP1\_$APP1.txt>  mainscript\_$APP1\_$APP1
     echo  "./gpgpu_ptx_sim__mergedapps -sing0" $APP1 \> output\_$APP1\_NoStream.txt>  mainscript\_$APP1\_NoStream
     shift
     for APP2; do
@@ -47,7 +47,7 @@ set -- $mylist4
 
 for APP1; do
     echo  "./gpgpu_ptx_sim__mergedapps -sing" $APP1 \> output\_$APP1.txt>  mainscript\_$APP1
-    echo  "./gpgpu_ptx_sim__mergedapps -apps" $APP1 \> output\_$APP1\_$APP1.txt>  mainscript\_$APP1\_$APP1
+    echo  "./gpgpu_ptx_sim__mergedapps -apps" $APP1 $APP1\> output\_$APP1\_$APP1.txt>  mainscript\_$APP1\_$APP1
     echo  "./gpgpu_ptx_sim__mergedapps -sing0" $APP1 \> output\_$APP1\_NoStream.txt>  mainscript\_$APP1\_NoStream
     shift
     for APP2; do
